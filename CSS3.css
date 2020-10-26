@@ -1,235 +1,213 @@
-/* Navavigation Bar */		
-
+/* Styles for Links */
 .pageHeader nav {
-	background: #4d4d4d; /* Sets light blue background */
+	margin-top: 0px;
+	background: #4d4d4d; /* Sets header to grey */
 	height: 40px;  /* Sets the height to 40px, otherwise the nav bar will look like a line */
-	line-height: 30px; /* It makes the links to appear in the middle */
-	margin: 0 auto 30px auto;
-	text-align: center;
+	line-height: 30px; /* It makes the links to appear in the middle */	text-align: center;
 	border-radius: 5px; /* Rounded Corner */
 	-moz-border-radius: 5px;  /* For Mozilla browsers, same rounded corner */
-	-webkit-border-radius: 5px; /* FOr Safari 5 and below, same rounded corner */
+	-webkit-border-radius: 5px; /* For Safari 5 and below, same rounded corner */
 }
-
-		
 .pageHeader nav ul { 
-	margin: 0 auto;
+	padding-left: 40px; /*space at front of header*/
 }
-
-/* Styles for Links */
-
 .pageHeader nav ul li {  
-	float: left;  
+	float: left;  /* align left*/
 	display: inline;   /* Makes the links to display horizontally */ 
 }
-	
 .pageHeader nav a:link, .pageHeader nav a:visited {
 	color: #fff;   /* Sets the color of the links to white */
 	display: inline-block;  /* Makes the links to be displays as blocks */
-	height: 30px;
-	padding: 5px 23px;  /* Sets space between links */
-	text-decoration: none;
+	height: 30px; /*height of the blocks*/
+	padding: 5px 25px;  /* Sets space between links */
+	text-decoration: none; /*get rid of underline and purple links*/
 }
-
-
-.pageHeader nav a:hover, .pageHeader nav a:active,
-.pageHeader nav .active a:link, .pageHeader nav .active a:visited {
-	background: #ff6666; /* Changes the background color to dark blue */
-	color: #fff;
+/*when hovered over the block, ".pageHeader nav .active a:link" sets home red*/
+.pageHeader nav a:hover, .pageHeader nav a:active, .pageHeader nav .active a:link, .pageHeader nav .active a:visited {
+	background: #ff6666; /* Changes the background color to red */
+	color: #fff; /*change text to white*/
 }
 
 
 /* Main Content */
-
 .Main {
+	line-height: 25px; /* Specifies the line height of each line */
+	background-color:#EEE; /* Sets background color to grey */
+	border-radius:5px;
 	overflow: hidden;
-	line-height: 30px; /* Specifies the line height of each line */
+	margin-top: 15px; /*space above grey*/
 }
-
 .Top {
-	margin-bottom: 3%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+.content {
+	width: 68%; 
+	float: left;
+	margin-left: 3%;
+}
+body {    
+	clear: both; /* Clears float value */
+	margin: 30px auto; /*above header*/
+	width: 80%;
+	text-align: left;
+	background-color:#FFF; /* Sets background color to white */
 }
 
-.content {
-	width: 70%; 
-	float: left;
-}
 
 
 /* Side-bar Navigation */		
-
 .top-sidebar {          /* Style applied to the Side-bar */
-	width: 20%;
-	float: left;
-	margin-left: 2%;
-	padding: 2% 3%;
+	width: 22%;
+	float: right;
+	margin-right: 4%;
+	margin-top: 2%;
 	margin-bottom: 2%;
 }
-
 .navigation {       /* Style applied to the navigation list */
- 	display: block;
-    list-style-position: inside; 
-    list-style-type: none;  /* Removes the bullets */
-    margin: 0;
-    padding: 0.875em 0; 
+
+}
+img{
+  		max-width:100%;
+  		max-height:100%;
 }
 
 
 /* Featured Panel */		
-
 .bottom-sidebar {   /* Style applied to side-bar */
-	width: 20%;
-	float: left;
-	margin-left: 2%;
-	padding: 2% 3%;
+	width: 22%;
+	float: right;
+	margin-right: 4%;
+	margin-bottom: 2%
 }
 
 .featured {   /* Style applied to featured panel */
 	background: none repeat scroll 0 0 #FFF;
     border-color: #D9D9D9;
     border-style: solid;
-    border-width: 1px;
-    margin-bottom: 1.25em;
-    padding: 1.25em; 
+    border-width: 3px;
+    margin-top: 4%;
+    padding: 10px; 
 }
-	
-	
-/* Footer */	
 
-/* Styles are mostly same as pageHeader */
-
+/*footer*/
 .pageFooter {     /* Style applied to footer bar */
 	width: 100%;
-	height:40px;
-	line-height:5px;
+	color: #FFF;	/*font color white*/
 	float: left;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	background-color: #4d4d4d;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	background-color: #4d4d4d; /*bg black*/
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;	
-	color: #FFF;	
 }
 
 .pageFooter p {  /* Style applied to content inside footer bar */
 	width: 90%;
     margin-left: 3%;
-	padding-top: 0.2%;
+    line-height:16px;
+    overflow: hidden;
+}
+
+.pageFooter a:link, .pageFooter a:visited {
+	color: #fff;   /* Sets the color of the links to white */
+}
+.pageFooter a:hover{
+	color: purple;
 }
 
 
- /* Website body */
- 
-body {    
-	clear: both; /* Clears float value */
-	margin: 50px auto; 
-	width: 80%;
-	text-align: left;
-	background-color:#FFF; /* Sets background color to light grey */
-}
 
-/* Main content area - Articles and Side-bars */
-
-.Main {    
-	background-color:#EEE; /* Sets background color to White */
-	border-radius:5px;
-	overflow: hidden;
-	line-height: 30px;
-}
-
-/* Article contents */
-
-.content {  
-	padding-left:2%; 
-}
-
-
-@media only screen and (min-width : 150px) and (max-width : 780px)
-{
-	/* Navavigation Bar */   	
-
+@media only screen and (max-width : 1200px){
+/* Navavigation Bar */   	
 .pageHeader nav {
 	background: #4d4d4d;  /* Sets light blue background */
 	height: 160px;  /* Changes the height to 160px; */
+	/*padding-top: 9px;*/
 	line-height: 30px;  /* It makes the links to appear in the middle */
-	margin-bottom: 0;
 }
-
-
 .pageHeader nav ul {
 	list-style: none; 
 	margin: 0 auto;
 	padding-left: 0;
-}
 	
+}
 .pageHeader nav li {
 	margin-left: 0 auto;
 	width: 100%;
 }
-	
 .pageHeader nav a:link, .pageHeader nav a:visited {
 	color: #FFF;
-	display: block;  /* Changes the link styles from inline to block */
-	height: 30px;
-	padding: 5px 0;
-	text-decoration: none;
+	display: block;  /* Changes the link styles from line to whole block */
+	height: 30px; /*block heights*/
+	padding: 5px 0; /*pad text*/
 }
-	
-	
+
+/*Main, nav, feature*/
 .Main {
 	overflow: hidden;
 	line-height: 25px; /* Line Height reduced to 25px */
-	margin-top: 3%;
-	margin-bottom: 2%;
+	margin-top: 15px;
 }
-	
 .Top {
-	padding: 2% 7%;
-	margin-bottom: 2%;
+	margin-left: 0px;
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-bottom: 2%;
+	margin-bottom: 0%;
 }
 	
 .Bottom {
-	padding: 2% 5%;
+	padding: 7%;
 }
-	
 .content {
 	width: 100%;
 	float: left;
 }
 
-
 .top-sidebar {
 	width: 80%; /* Width increased to 80% */
 	float: left;
-	margin-top: 4%;
+	margin-top: 0%;
 	margin-left: 0;
-	padding: 0 7%;
+	padding: 0 4%;
 }
-
-
 .bottom-sidebar {
 	width: 80%;  /* Width increased to 80% */
-	margin-top: 2%;
-	padding: 0 8%;
-	margin-bottom: 0%;
+	margin-top: 0%;
+	padding: 0 6%;
+	margin-bottom: 7%;
+}
+
+/* Side-bar Navigation */		
+.top-sidebar {          /* Style applied to the Side-bar */
+	width: 80%;
+	float: left;
+	margin-left: 3%;
+	/*padding: 0% 0%;*/
+	margin-bottom: 4%;
+}
+
+img{
+		margin-left: 5%;
+  		max-width:90%;
+  		max-height:100%;
+}
+
+.navigation {       /* Style applied to the navigation list */
+	background: none repeat scroll 0 0 #FFF;
+    border-color: #D9D9D9;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+    line-height: 25px;
+    list-style: none;
+}
+
+.pageFooter {     /* Style applied to footer bar */
+	margin-bottom: 30px;
 }
 
 
-.pageFooter {
-	 width: 100%;
-	 float: left;
-	 margin: 2% 0;
-	 background-color: #4d4d4d;
-	 border-radius: 5px; 
-	 color: #FFF; 
-	 line-height:15px;
 }
- 
-.pageFooter p {
-	 width: 90%;
-       margin: 2% auto;
-}
-
-}
-	

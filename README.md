@@ -1,2 +1,2 @@
-# jeffwang321.github.io
-HTML Review and Server Testing 
+# jeffwang4321.github.io
+Personal Project: Resume Website with Responsive Design 
